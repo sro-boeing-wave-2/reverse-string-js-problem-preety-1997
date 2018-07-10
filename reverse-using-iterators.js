@@ -1,5 +1,5 @@
 // The intent of this file is to reverse the string using iterators (for, foreach)
-function reverse(inputstring) {
+const reverse = (inputstring) => {
   const str = [];
   let i;
   for (i = 0; i < Math.floor((inputstring.length) / 2); i += 1) {
@@ -10,6 +10,6 @@ function reverse(inputstring) {
     str[i] = inputstring[i];
   }
   return str.join('');
-}
+};
 
 module.exports = reverse;
